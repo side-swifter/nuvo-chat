@@ -1,0 +1,16 @@
+{
+	"name": "nuvo-chat",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-10-17",
+	"observability": {
+		"enabled": true,
+	},
+	"d1_databases": [
+		{
+			"binding": "nuvo_chat_db",
+			"database_name": "nuvo-chat-db",
+			"database_id": "14bd46fa-40ca-45cd-a010-0f87c9dc4aea",
+			"remote": true
+		}
+	],
+}
