@@ -66,7 +66,7 @@ Enable participation
 
 Stop tracking
 
-/analyze
+/challenge
 
 Generate a challenge from the conversation
 

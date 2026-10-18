@@ -363,7 +363,7 @@ async function processPhoto(
       env,
       chatId,
       "📸 got the photo, but you don't have an active challenge.\n" +
-      "run /analyze first.",
+      "run /challenge first.",
       messageId
     );
     return;
@@ -506,7 +506,7 @@ async function handleUpdate(
       "group chats become real challenges.\n\n" +
       "/optin — join\n" +
       "/optout — leave\n" +
-      "/analyze — generate challenge\n" +
+      "/challenge — generate challenge\n" +
       "/leaderboard — see rankings\n\n" +
       "send a photo to attempt your challenge."
     );
@@ -546,12 +546,12 @@ async function handleUpdate(
     return;
   }
 
-  if (command === "/analyze") {
+  if (command === "/challenge") {
     if (!isGroup) {
       await sendMessage(
         env,
         chatId,
-        "use /analyze in your Telegram group."
+        "use /challenge in your Telegram group."
       );
     } else {
       await analyzeGroup(env, chatId);

@@ -41,7 +41,7 @@ export interface LeaderboardEntry {
   points: number;
 }
 
-// Register or update a Telegram user
+// How our app registers/updates a telegram user
 export async function saveUser(
   db: D1Database,
   userId: number,
@@ -55,7 +55,7 @@ export async function saveUser(
   ).bind(userId, username).run();
 }
 
-// Manage consent and stored user data
+// How the app manages who consented to the chat and 
 export async function setUserConsent(
   db: D1Database,
   userId: number,
